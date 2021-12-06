@@ -16,7 +16,6 @@
     background: black;
     transition: 0.5s;
 }
-
 #btnScrollToTop:active{
     background: black;
 }
@@ -27,12 +26,6 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  label{
-    font-weight:bold;
-    font-family: cursive;
-  }
-
   /*CSS do menu*/
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -182,4 +175,34 @@ form .user-details .input-box{
 .contexto{
     width: 90%;
     margin: auto;
+}
+/* Add a black background color to the top navigation /
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/ Style the links inside the navigation bar */
+.topnav a {
+  margin: 0;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+footer {
+  padding: 1%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFFDE4;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+hr{
+  margin-top: 3%;
+  border: 1px solid rgb(0,0,0);
 }
