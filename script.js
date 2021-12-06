@@ -47,4 +47,58 @@ function calcBin(){
     else if(document.getElementById("nums1").value=='10' && document.getElementById("selected").value=='16'){
       document.getElementById("result").innerHTML =("Decimal: "  + input.toString(16));
     }
-}
+//de base hexadecimal para qualquer outra base
+    else if(document.getElementById("nums1").value=='16' && document.getElementById("selected").value=='2'){
+      var input2=parseInt(input1,16);
+    document.getElementById("result").innerHTML = "Decimal: "+input2.toString(2);
+    }
+    else if(document.getElementById("nums1").value=='16' && document.getElementById("selected").value=='8'){
+      var input2=parseInt(input1,16);
+    document.getElementById("result").innerHTML = "Decimal: "+input2.toString(8);
+    }
+    else if(document.getElementById("nums1").value=='16' && document.getElementById("selected").value=='10'){
+      var input2=parseInt(input1,16);
+    document.getElementById("result").innerHTML = "Decimal: "+input2.toString(10);
+    }
+    else if(document.getElementById("nums1").value=='16' && document.getElementById("selected").value=='16'){
+      document.getElementById("result").innerHTML =("Hexadecimal: "  + input);
+    }
+    //de base binaria para qualquer outra base
+    else if(document.getElementById("nums1").value=='2' && document.getElementById("selected").value=='8'){
+      const test = ~0x01
+      for(var i=input1.length-1; i>=0; --i){
+        if(test & input1[i]){ return document.getElementById("result").innerHTML =("Binario: Repare que não está a inserir um número binário"); }
+      }
+      input1=parseInt(input1,2);
+      return document.getElementById("result").innerHTML = "Octal: "+input1.toString(8);
+      
+    }
+    else if(document.getElementById("nums1").value=='2' && document.getElementById("selected").value=='10'){
+      const test = ~0x01
+      for(var i=input1.length-1; i>=0; --i){
+        if(test & input1[i]){ return document.getElementById("result").innerHTML =("Binario: Repare que não está a inserir um número binário"); }
+      }
+      input1=parseInt(input1,2);
+      return document.getElementById("result").innerHTML = "Decimal: "+input1;
+    }
+
+    else if(document.getElementById("nums1").value=='2' && document.getElementById("selected").value=='16'){
+      const test = ~0x01
+      for(var i=input1.length-1; i>=0; --i){
+        if(test & input1[i]){ return document.getElementById("result").innerHTML =("Binario: Repare que não está a inserir um número binário"); }
+      }
+      input1=parseInt(input1,2);
+      return document.getElementById("result").innerHTML = "Hexadecimal: "+input1.toString(16);
+    }
+
+    else if(document.getElementById("nums1").value=='2' && document.getElementById("selected").value=='2'){
+      const test = ~0x01
+      for(var i=input1.length-1; i>=0; --i){
+        if(test & input1[i]){ return document.getElementById("result").innerHTML =("Binario: Repare que não está a inserir um número binário"); }
+      }
+      return document.getElementById("result").innerHTML = "Binario: "+input1;
+    }
+    else{
+      document.getElementById("result").innerHTML =("Algo correu mal");
+    }
+  }
