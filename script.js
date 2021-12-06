@@ -10,3 +10,41 @@ function swap(){
   document.getElementById('nums1').value = obj1;
   document.getElementById('selected').value = obj2;
 }
+function calcBin(){
+  var input= Number(document.getElementById("num").value);
+  var input1= (document.getElementById("num").value);
+  
+    if(document.getElementById("nums1").value=='16' && document.getElementById("selected").value=='10'){
+    var input2=parseInt(input1,16);
+    document.getElementById("result").innerHTML = "Decimal: "+input2.toString(10);
+  }
+    //de base octal para qualquer outra base
+    else if(document.getElementById("nums1").value=='8' && document.getElementById("selected").value=='2'){
+      input=parseInt(input,8);
+      document.getElementById("result").innerHTML = "Binário: "+input.toString(2);
+     }
+     else if (document.getElementById("nums1").value=='8' && document.getElementById("selected").value=='8'){
+       document.getElementById("result").innerHTML = "Octal: "+input;
+     }
+     else if (document.getElementById("nums1").value=='8' && document.getElementById("selected").value=='10'){
+       input=parseInt(input,8);
+       document.getElementById("result").innerHTML = "Decimal: "+input;
+     }
+     else if(document.getElementById("nums1").value=='8' && document.getElementById("selected").value=='16'){
+       input=parseInt(input,8);
+      document.getElementById("result").innerHTML = "Hexadecimal: "+input.toString(16);
+     }
+     //de base decimal para qualquer outra base
+     else if(document.getElementById("nums1").value=='10' && document.getElementById("selected").value=='2'){
+       document.getElementById("result").innerHTML =("Binário: "  + input.toString(2));
+     }
+      else if(document.getElementById("nums1").value=='10' && document.getElementById("selected").value=='8'){
+      document.getElementById("result").innerHTML =("Octal: "  + input.toString(8));
+    }
+      else if(document.getElementById("nums1").value=='10' && document.getElementById("selected").value=='10'){
+      document.getElementById("result").innerHTML =("Decimal: "  + input);
+    }
+    else if(document.getElementById("nums1").value=='10' && document.getElementById("selected").value=='16'){
+      document.getElementById("result").innerHTML =("Decimal: "  + input.toString(16));
+    }
+}
