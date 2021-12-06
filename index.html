@@ -36,5 +36,43 @@
                     </select>
                   </div>
                 </div>
+                <input type="button"  id="bin" onclick="calcBin()" value="Convert">
+                <input type="button"  id="enviar" onclick="swap()" value="Swap">
+                <button type="reset" onclick="document.location.reload()">Reset</button>
+                Resultado:
+                <br>
+                <textarea id="result" disabled style="resize: none;"></textarea>
+              </form>
+            </div>
+        </div> 
+          <br><br>
+          <div class="contexto">
+            <h1>Como converter de qualquer base para decimal</h1><br>
+              <p>A primeira etapa para converter um número em outra base é convertê-lo primeiro em decimal. Se o número já for decimal, vá para a próxima etapa.
+
+              Para converter um número em decimal, use o método de notação posicional. Multiplique cada dígito no número do número mais à direita à esquerda pela base à potência de n, onde n é a distância da direita.
+
+              Portanto, lendo o número original da direita para a esquerda, o dígito mais distante à direita é igual ao dígito vezes (base) 0. O dígito que está uma posição da direita é igual ao dígito vezes (base) 1.</p>
+              <br>
+<br>
+            <h2>Fórmula de conversão decimal</h2>
+<br>
+                <p>Assim, a fórmula de conversão decimal é:
+
+                número decimal 10 = (d0 × (base)^ 0) + (d1 × (base)^ 1) +… + (dn - 1 × (base) ^(n - 1))
+
+                Ao usar esta fórmula, d(0) é o dígito mais à direita, d(1) é o dígito uma posição da direita e d(n - 1) é o dígito mais à esquerda.</p>
+<br><br>
+            <h2>Como converter de decimal para qualquer base</h2><br>
+              <p>Para converter o número decimal na base de resultados desejada, use o método de divisão sucessiva.
+
+              Para usar o método de divisão sucessiva, divida o número decimal pela base desejada usando a divisão longa. Escreva o restante ao lado do problema de divisão.
+
+              Pegue o quociente resultante do problema da primeira divisão e divida-o pela base desejada novamente. Como na primeira etapa, escreva o restante ao lado do problema.
+
+              Continue esse processo até que o quociente resultante seja 0.
+
+              Os restos que você escreveu ao lado dos problemas de divisão são o número resultante na base desejada. Leia os remanescentes de baixo para cima, pois o dígito menos significativo estará no topo e o dígito mais significativo estará na parte inferior.</p>
+          </div>
     </body>
 </html>
