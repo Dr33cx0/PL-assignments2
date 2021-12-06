@@ -96,7 +96,7 @@ function calcBin(){
       for(var i=input1.length-1; i>=0; --i){
         if(test & input1[i]){ return document.getElementById("result").innerHTML =("Binario: Repare que não está a inserir um número binário"); }
       }
-      return document.getElementById("result").innerHTML = "Binario: "+input1;
+      return document.getElementById("result").innerHTML = "Binario: "+input;
     }
     else{
       document.getElementById("result").innerHTML =("Algo correu mal");
