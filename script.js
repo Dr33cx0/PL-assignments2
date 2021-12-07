@@ -127,7 +127,7 @@ function calcBin(){
     else if(document.getElementById("nums1").value=='2' && document.getElementById("selected").value=='8'){
       for(var i = input1.length-1; i>= 0; i--){
         if(input1[i] != 1 && input1[i] != 0) {
-            return document.getElementById("result").innerHTML = "Repare que não está a inserir um número binário, porfavor insira um número que contenha apenas '0' e '1'";
+            return document.getElementById("result").innerHTML = "Repare que não está a inserir um número binário, por favor insira um número que contenha apenas '0' e '1'";
         }
        }
       input2=parseInt(input1,2);
