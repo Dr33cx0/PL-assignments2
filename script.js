@@ -137,7 +137,6 @@ function calcBin(){
         return document.getElementById("result").innerHTML = "Decimal: "+input1;
       }
     }
-
     else if(document.getElementById("nums1").value=='2' && document.getElementById("selected").value=='16'){
       for(var i = input1.length-1; i>= 0; i--){
         if(input1[i] != 1 && input1[i] != 0) {
@@ -147,7 +146,6 @@ function calcBin(){
         return document.getElementById("result").innerHTML = "Hexadecimal: "+input1.toString(16).toUpperCase();
       }
     }
-
     else if(document.getElementById("nums1").value=='2' && document.getElementById("selected").value=='2'){
       for(var i = input1.length-1; i>= 0; i--){
         if(input1[i] != 1 && input1[i] != 0){
